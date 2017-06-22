@@ -9,6 +9,15 @@
     box-sizing: border-box;
 }
 
+@keyframes circle {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -17,10 +26,21 @@
     background-size: cover;
 }
 
-.disc-container {}
+.disc-container {
+    position: relative;
+}
 
 .disc-container .pointer {
     width: 24vw;
+    position: absolute;
+    left: 50%;
+}
+
+.disc-container .disc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14vw;
 }
 
 .disc-container .ring {
@@ -29,6 +49,15 @@
 
 .disc-container .light {
     width: 72vw;
+    position: absolute;
+    animation: circle 20s infinite linear;
+}
+
+.disc-container .cover {
+    width: 44.5vw;
+    position: absolute;
+    border-radius: 50%;
+    animation: circle 20s infinite linear;
 }
 
 .song-description {}
