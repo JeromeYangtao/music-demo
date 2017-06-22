@@ -1,6 +1,6 @@
 $(function() {
 
-    $.get('/lyric.json').then(function(object) {
+    $.get('./lyric.json').then(function(object) {
         let { lyric } = object
         let array = lyric.split('\n')
         let regex = /^\[(.+)\](.+)$/
