@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: transparent url('/images/foggy-cover.jpg') no-repeat center;
+    background: transparent url('https://jeromeyangtao.github.io/music-demo/images/foggy-cover.jpg') no-repeat center;
     background-size: cover;
 }
 
