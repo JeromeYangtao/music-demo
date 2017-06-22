@@ -23,7 +23,15 @@ $(function() {
     let audio = document.createElement('audio')
     audio.src = 'http://win.web.ra03.sycdn.kuwo.cn/2309f752a2c67aafad8991d5882afce0/594be474/resource/a3/48/67/14/4247427266.aac'
     audio.oncanplay = function() {
-        // audio.play()
+        audio.play()
         $('.disc-container').addClass('playing')
     }
+    $('.icon-pause').on('touchstart', function() {
+        audio.pause()
+        $('.disc-container').removeClass('playing')
+    })
+    $('.icon-play').on('touchstart', function() {
+        audio.play()
+        $('.disc-container').addClass('playing')
+    })
 })
