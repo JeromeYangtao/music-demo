@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: transparent url('images/foggy-cover.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.disc-container {}
+
+.disc-container .pointer {
+    width: 24vw;
+}
+
+.disc-container .ring {
+    width: 72vw;
+}
+
+.disc-container .light {
+    width: 72vw;
+}
+
+.song-description {}
+
+.page>.links {}
