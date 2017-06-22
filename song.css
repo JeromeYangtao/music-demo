@@ -60,6 +60,17 @@
     animation: circle 20s infinite linear;
 }
 
-.song-description {}
+.song-description {
+    color: #AEABAC;
+    text-align: center;
+}
+
+.song-description h1 {
+    font-size: 18px;
+}
+
+.song-description p {
+    font-size: 14px;
+}
 
 .page>.links {}
